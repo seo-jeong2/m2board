@@ -2,11 +2,13 @@ package vo;
 
 public class Board {
 	private int boardNo;
-	private String title;
-	private String writer;
+	private String boardTitle;
+	private String boardWriter;
+	private String boardContents;
 	private String createDate;
-	private int read;
-	private int nice;
+	private int boardRead;
+	private int boardNice;
+	private String boardPw;
 	
 	public int getBoardNo() {
 		return boardNo;
@@ -14,17 +16,17 @@ public class Board {
 	public void setBoardNo(int boardNo) {
 		this.boardNo = boardNo;
 	}
-	public String getTitle() {
-		return title;
+	public String getBoardTitle() {
+		return boardTitle;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public void setBoardTitle(String boardTitle) {
+		this.boardTitle = boardTitle;
 	}
-	public String getWriter() {
-		return writer;
+	public String getBoardWriter() {
+		return boardWriter;
 	}
-	public void setWriter(String writer) {
-		this.writer = writer;
+	public void setBoardWriter(String boardWriter) {
+		this.boardWriter = boardWriter;
 	}
 	public String getCreateDate() {
 		return createDate;
@@ -32,20 +34,35 @@ public class Board {
 	public void setCreateDate(String createDate) {
 		this.createDate = createDate;
 	}
-	public int getRead() {
-		return read;
+	public int getBoardRead() {
+		return boardRead;
 	}
-	public void setRead(int read) {
-		this.read = read;
+	public void setBoardRead(int boardRead) {
+		this.boardRead = boardRead;
 	}
-	public int getNice() {
-		return nice;
+	public int getBoardNice() {
+		return boardNice;
 	}
-	public void setNice(int nice) {
-		this.nice = nice;
+	public void setBoardNice(int boardNice) {
+		this.boardNice = boardNice;
+	
+	}
+	public String getBoardContents() {
+		return boardContents;
+	}
+	public void setBoardContents(String boardContents) {
+		this.boardContents = boardContents;
+	}
+	public String getBoardPw() {
+		return boardPw;
+	}
+	public void setBoardPw(String boardPw) {
+		this.boardPw = boardPw;
 	}
 	
 	
 	
-
+	
+	
+	
 }

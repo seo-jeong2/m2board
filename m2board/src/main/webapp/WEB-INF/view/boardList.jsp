@@ -14,7 +14,7 @@
          글쓰기
       </a>
    </div>
-   <table>
+   <table border="1">
       <thead>
          <tr>
             <th>번호</th>
@@ -30,13 +30,13 @@
             <td>${b.boardNo}</td> <!-- b.getNo() -->
             <td>
                <a href="${pageContext.request.contextPath}/boardOne?boardNo=${b.boardNo}">
-                  ${b.title}
+                  ${b.boardTitle}
                </a>
             </td>
-            <td>${b.writer}</td>
+            <td>${b.boardWriter}</td>
             <td>${b.createDate}</td>
-            <td>${b.read}</td>
-            <td>${b.nice}</td>
+            <td>${b.boardRead}</td>
+            <td>${b.boardNice}</td>
          </c:forEach>
       </tbody>
    </table>
