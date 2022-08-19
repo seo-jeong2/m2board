@@ -25,6 +25,7 @@ public class BoardOneController extends HttpServlet {
 		
 		//뷰 포워딩
 		request.getRequestDispatcher("/WEB-INF/view/boardOne.jsp").forward(request, response);
+		System.out.println("글 상세보기");
 
 	}
 

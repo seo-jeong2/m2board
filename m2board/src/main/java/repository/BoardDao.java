@@ -48,7 +48,7 @@ public class BoardDao implements IBoardDao {
 
 			}
 
-			System.out.println(list + ": 목록");
+			System.out.println(list + ": 글 목록");
 
 		} finally {
 			if (rs != null) {
@@ -94,7 +94,7 @@ public class BoardDao implements IBoardDao {
 				list.add(board);
 
 			}
-			System.out.println(list + ": 글상세보기");
+			System.out.println(list + ": 글 상세보기");
 
 		} finally {
 			if (rs != null) {
@@ -129,7 +129,9 @@ public class BoardDao implements IBoardDao {
 		if (stmt != null) {
 			stmt.close();
 		}
-		System.out.println(totalCount + "totalCount");
+		
+		System.out.println(totalCount + " : 글 갯수");
+		
 		return totalCount;
 	}
 

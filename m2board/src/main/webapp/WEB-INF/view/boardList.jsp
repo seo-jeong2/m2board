@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-   <h1>게시판 목록</h1>
+   <h1>게시글 목록</h1>
    <div>
       <a href="${pageContext.request.contextPath}/addBoard">
          글쓰기
@@ -47,6 +47,10 @@
   	<c:if test="${currentPage < 1}">
   	<a href = "${pageContext.request.contextPath}/boardList?currentPage=${currentPage+1}">다음</a>
    </c:if>
+   </div>
+   
+   <div>
+   <a href = "${pageContext.request.contextPath}/index">뒤로가기</a>
    </div>
    
 </body>

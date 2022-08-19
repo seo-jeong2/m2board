@@ -18,16 +18,24 @@ public class AddBoardController extends HttpServlet {
        
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		request.getRequestDispatcher("/WEB-INF/view/addBoard.jsp").forward(request, response);
+		System.out.println("글쓰기");
+	}
 	
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String boardTitle = request.getParameter("boardTitle"); 
+		request.setCharacterEncoding("utf-8");
+		
+		String title = request.getParameter("boardTitle"); 
 		String content = request.getParameter("boardContents");
 		String pw = request.getParameter("boardPw"); 
 		
 		boardService = new BoardService();
 		request.setAttribute(pw, content);
+		
+		
 		
 		
 		

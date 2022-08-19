@@ -11,19 +11,21 @@
 <body>
 <div>
 <h1>게시글 입력</h1>
+
+<table border = "1">	
 	<tr>
-		<td>제목</td>
+		<th>제목</th>
 		<td><input type= "text" name="boardtitle" id="boardTitle"></td>
 	</tr>
 	<tr>
-		<td>내용</td>
+		<th>내용</th>
 		<td><textarea rows="5" cols="80" name="boardContent" id="boardContent"></textarea></td>
 	</tr>
 	<tr>
-		<td>비밀번호 입력</td>
+		<th>비밀번호 입력</th>
 		<td><input type="password" name="boardPw"></td>
 	</tr>	
-			
+</table>			
 </div>
 
 <div>
@@ -31,7 +33,7 @@
 	<button type="reset">초기화</button>
 </div>
 
-<a href="${pageContext.request.contextPath}/boardList">뒤로가기</a>
+<a href="${pageContext.request.contextPath}/index">뒤로가기</a>
 
 </body>
 </html>

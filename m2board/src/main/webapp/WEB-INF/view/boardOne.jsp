@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>글 상세보기</h1>
+<h1>게시글 상세보기</h1>
 <table border="1">
 	<thead>
 	<tr> 

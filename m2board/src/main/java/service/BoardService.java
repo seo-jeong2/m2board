@@ -9,7 +9,7 @@ import java.sql.*;
 public class BoardService implements IBoardService {
 	private IBoardDao dao;
 
-	// 글 목록
+	// 글 목록 
 	public Map<String, Object> getBoardList(int rowPerPage, int currentPage) {
 
 		Map<String, Object> map = null;
@@ -65,7 +65,7 @@ public class BoardService implements IBoardService {
 			BoardDao boardDao = new BoardDao();
 			map.put("list", boardDao.selectBoardOne(conn, boardNo));
 
-			System.out.println(map + "상세보기");
+			System.out.println(map + " : 글 상세보기");
 			conn.commit();
 
 		} catch (Exception e) {
@@ -137,7 +137,8 @@ public class BoardService implements IBoardService {
 		try {
 
 			conn = new DBUtil().getConnection();
-			conn.setAutoCommit(false);
+			conn.setAutoCommit(false); //자동커밋방지
+			
 			BoardDao boardDao = new BoardDao();
 			boardDao.insertBoard(conn, paramBoard);
 
